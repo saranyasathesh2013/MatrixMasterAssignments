@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+</head>
+<body>
+    <main>
+        <h2>Please submit the following details and we will get back to you</h2>
+        <form>
+         <div>
+            <h3>How did you come to know about us:</h3>
+            
+            <label>
+                <input type="radio" name="reason" value="friends">
+                Friends
+            </label><br>
+    
+            <label>
+                <input type="radio" name="reason" value="social_media">
+                Social Media
+            </label><br>
+    
+            <label>
+                <input type="radio" name="reason" value="flyer">
+                Flyer
+            </label><br>
+            <label>
+                <input type="radio" name="reason" value="others">
+                Others
+            </label><br>
+         </div>
+         <div>
+          <h3>We have 4 locations. Which one is your nearest?:</h3>
+          <label for="location">Choose a location:</label>
+          <select id="location" name="location">
+            <option value="amsterdam">Amsterdam</option>
+            <option value="rotterdam">Rotterdam</option>
+            <option value="denhaag">Den Haag</option>
+            <option value="utrecht">Utrecht</option>
+          </select>
+         </div>
+
+         <div>
+            <h3>What services would you like to avail from us:</h3>
+            <label>
+                <input type="checkbox" name="service" value="facial">
+                Facial
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="service" value="haircut">
+                Hair-cut
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="service" value="manicure">
+                Manicure
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="service" value="pedicure">
+                Pedicure
+            </label><br>
+            <label>
+                <input type="checkbox" name="service" value="foot_reflexology">
+                Foot reflexology
+            </label><br>
+            <label>
+                <input type="checkbox" name="service" value="massage">
+                 Massage
+            </label><br><br>
+         </div>
+         <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email address..."><br>
+         </div>
+         <div>
+            <h3>Any other questions:</h3>
+            <!--<label for="questions">Questions:</label><br> -->          
+            <textarea id="questions" name="questions" rows="4" cols="50" placeholder="Enter your questions here..."></textarea><br>
+         </div>
+    
+            <input type="submit" value="Submit">
+        </form>
+
+        <div>
+            <p>You can call us at 062734287</p>
+            <p>Our main office is at ajdfja 25, 6759FC, Amsterdam</p>
+        </div>
+    </main>
+    <footer>
+        &copy;2024 Companion Beauty Salon
+    </footer>
+    
+</body>
+</html>

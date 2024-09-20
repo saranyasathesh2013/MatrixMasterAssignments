@@ -1,0 +1,65 @@
+body {
+    font-family:sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.logo {
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.search-bar {
+    margin-bottom: 5px;
+    background-color:lightgrey;
+    padding: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding:5px;
+    margin-right: 5px;
+}
+
+/*.search-bar button {
+    padding: 10px 20px;
+}*/
+
+.links-container {
+    display: flex;    
+}
+
+.links-container div {
+    padding: 5px;
+    margin: 0 2px;
+    width: 100%;
+}
+
+.special-searches{
+    background-color: #7ee5da;
+}
+.general-info{
+    background-color: #70ccc2;
+}
+.subscribe{
+    background-color: #62b3aa;
+}
+
+.special-searches, .general-info, .subscribe {
+    text-align: center;
+    font-family: serif;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}

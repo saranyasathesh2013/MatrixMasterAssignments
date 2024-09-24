@@ -1,0 +1,116 @@
+:root {
+  --heading-background-color: lightgray;
+}
+
+h3, h4 {
+    margin-bottom: 0;
+}
+
+body {
+  background-color: rgb(236, 235, 235);
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px;
+  grid-template-areas:
+    "header header header header"
+    "side-bar events_personals housing_sale jobs";
+  gap: 10px;
+  margin-top: 0;
+}
+
+/* style for header */
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.header h1 {
+  background-color: var(--heading-background-color);
+  padding: 0 20px;
+}
+
+/* Style for Sidebar */
+.sidebar {
+  grid-area: side-bar;
+  background-color: var(--heading-background-color);
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.sidebar a {
+    font-weight: bolder;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.sidebar_search {
+    background-color: rgb(191, 190, 190);
+    padding: 0px 10px 10px 10px;
+}
+
+.sidebar_search h3 {
+    background-color: rgb(191, 190, 190);
+}
+
+.sidebar_links {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.sidebar_links > p {
+    margin: 0;;
+}
+
+.events_personals {
+  grid-area: events_personals;
+}
+
+.housing_sale {
+  grid-area: housing_sale;
+}
+
+.jobs {
+  grid-area: jobs;
+}
+
+.listing {
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.25;
+}
+
+ul li {
+  border-bottom: 1px solid #f0eded;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+h3 {
+  background-color: var(--heading-background-color);
+  padding: 0;
+}
+
+.orphan_links {
+    font-weight: 900;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}

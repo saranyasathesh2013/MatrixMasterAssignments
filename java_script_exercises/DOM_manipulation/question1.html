@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation exercise</title>
+</head>
+
+<body>
+   <button onclick="changeText()">Click me!</button>
+    <div>
+        <p id="text">This text changes</p>
+    </div>
+    <script>
+        function changeText() {
+            const textElement = document.getElementById('text');
+            textElement.textContent = "I have changed";
+        }
+    </script>
+</body>
+
+</html>

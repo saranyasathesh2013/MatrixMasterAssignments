@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation exercise</title>
+</head>
+
+<body>
+
+    <form>
+        <label for="user-name">Username</label>
+        <input type="text" id="user-name"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password"><br>
+        <button onclick="validate()">Login</button>
+    </form>
+
+    <script>
+        function validate() {
+            const userName = document.getElementById('user-name').value;
+            const password = document.getElementById('password').value;
+           
+            if(userName === 'Saranya' && password == '1234'){
+                window.alert('Login Successful')
+            } else {
+                window.alert('Invalid username or password')
+            }
+        }
+    </script>
+    
+</body>
+</html>

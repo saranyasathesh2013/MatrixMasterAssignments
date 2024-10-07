@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation exercise</title>
+</head>
+
+<body>
+
+    <input type="text" id="new-item" placeholder="Enter a new fruit">
+    <button onclick="addItem()"> Add Item</button>
+    <ul id="fruits">
+
+    </ul>
+
+    <script>
+        function addItem() {
+            let newItem = document.getElementById('new-item').value;
+            if (newItem.trim() !== ' ') {
+                let li = document.createElement('li');
+                li.textContent = newItem;
+                document.getElementById('fruits').appendChild(li);
+                document.getElementById('new-item').value = '';
+            } else {
+                alert('Please enter a fruit');
+            }
+        }
+    </script>
+</body>
+</html>

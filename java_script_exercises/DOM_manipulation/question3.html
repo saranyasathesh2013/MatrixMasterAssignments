@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation exercise</title>
+</head>
+
+<body>
+
+    <img id="bike" src="images/bike1.jpg" alt="bike"><br>
+    <button onclick="changeImage()">Change me</button>
+
+    <script>
+        function changeImage() {
+            let imageElement = document.getElementById('bike');
+            imageElement.setAttribute('src', 'images/bike2.jpg')
+        }
+    </script>
+
+</body>
+
+</html>

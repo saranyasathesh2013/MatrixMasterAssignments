@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloUser</title>
+    
+</head>
+
+<body>
+   
+    <button onclick="hiUser()">Click to Enter Your Name</button>
+
+    <script>
+
+        function hiUser() {
+            const name = window.prompt("What is your name?");
+            if (name) {
+                window.alert("Hello, " + name + "! Welcome");
+            } else {
+                window.alert("You didn't enter a name.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

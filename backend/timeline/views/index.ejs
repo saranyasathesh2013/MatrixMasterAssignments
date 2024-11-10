@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <form action="/save-post" method="post">
+        
+        <input type="text" name="name" id="name" placeholder="Enter your name" required ><br><br>
+
+        <label for="message" >Post a message</label><br>
+        <textarea maxlength=25 name="message" id="message" required>
+        </textarea><br>
+
+        <button>Post a messege</button>
+        <hr>
+   
+    </form>
+
+    <% if(postsInfo.length > 0){ %>
+
+        <% postsInfo.forEach((post) => { %>
+            <h3>Name: <%= post.name %> </h3>
+            <p> CreatedAt: <%= post.createdAt %></p>
+            <p >Post: <%= post.message %></p>
+            <a href = "/delete/post/<%= post._id %>">delete</a>
+            <hr>
+       <% }) %>
+    <% } else { %>
+        <h3>No posts found</h3>
+    <% } %>
+    
+    
+</body>
+</html>

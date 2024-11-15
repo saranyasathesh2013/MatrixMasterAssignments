@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h3>Edit a Post</h3>
+    <form action="/update/<%= feedInfo._id  %>" method="post"> 
+        <input type="text" id="name" name="name" placeholder="Name" value="<%= feedInfo.name %>"><br><br>
+        <textarea id="message" name="message" placeholder="Message"> <%= feedInfo.message %> </textarea><br><br>
+        <button>Submit</button>
+    </form>   
+</body>
+</html>

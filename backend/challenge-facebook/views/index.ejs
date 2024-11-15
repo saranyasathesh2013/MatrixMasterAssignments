@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <span>Welcome To Facebook</span>
+    </header>
+    <div class="form-container">
+        <h3>Add a post</h3>
+        <form action="/save" method="post">
+        
+            <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+            <textarea id="message" name="message" placeholder="Message" required></textarea><br><br>
+            <button>Save</button>
+        </form>        
+        <% if (error) { %>
+            <p class="error"><%= error.message %></p>
+        <% } %>
+    </div>
+    <div class="feeds-container">
+        <% if(feedsInfo.length > 0){ %>
+            <% feedsInfo.forEach((feed) => { %>
+                <div class="feed-data">
+                    <div>
+                        <h2><%= feed.name %> </h2>
+                        <p><%= feed.message %></p>
+                    </div>
+                    <div>
+                        <a href = "/feed/<%= feed._id %>">See more</a>
+                        <p><%= feed.createdAt %></p>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <h3>No feeds found</h3>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0.5rem 2rem;
+}
+
+.feeds-container {
+  margin-top: 2rem;
+}
+
+.feed-data {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 60%;
+}
+
+/* Button styles */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 4rem;
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Anchor link styles */
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: blue;
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.delete-button {
+  background-color: brown;
+}
